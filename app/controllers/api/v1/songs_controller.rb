@@ -3,15 +3,15 @@ module Api
     class SongsController < ApplicationController
 
       def index
-        @songs = Song.all
-        render json: @songs
+
+        render json: Song.all
       end
 
 
       private
 
       def song_params
-        params.require(:song).permit(:user_id, :name)
+        params.require(:song).permit(:user_id, :name, :lyric, :music)
       end
 
     end

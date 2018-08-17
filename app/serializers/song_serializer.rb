@@ -1,5 +1,5 @@
 class SongSerializer < ActiveModel::Serializer
 
-  attributes :id, :name, :user_id
+  attributes :id, :name, :lyric, :music, :user_id
   # belongs_to :user -- This creates a relationships key
 end
