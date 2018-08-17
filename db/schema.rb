@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 2018_08_17_012831) do
 
   create_table "songs", force: :cascade do |t|
     t.string "name"
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
