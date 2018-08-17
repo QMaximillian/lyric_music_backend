@@ -7,14 +7,11 @@ module Api
         render json: @songs
       end
 
-      def create
-        @song = Song.create(:song_params)
-        render json: @song
-      end
 
+      private
 
       def song_params
-        params.require(:song).permit(:name)
+        params.require(:song).permit(:user_id, :name)
       end
 
     end

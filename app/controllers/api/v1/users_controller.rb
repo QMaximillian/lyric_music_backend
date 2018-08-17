@@ -10,13 +10,13 @@ module Api
 
       def create
         @user = Users.create(users_params)
-        render json: @user, includes: ['songs']
+        render json: @user
       end
 
       private
 
       def user_params
-        params.require(:user).permit(:id, :name, :song)
+        params.require(:user).permit(:id, :name)
       end
 
     end
