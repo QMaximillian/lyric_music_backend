@@ -3,8 +3,15 @@ module Api
     class SongsController < ApplicationController
 
       def index
-
         render json: Song.all
+      end
+
+      def create
+      @song = User.new(song_params)
+
+        if @song.save
+          render json: @song
+        end
       end
 
 

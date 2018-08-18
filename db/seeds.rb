@@ -9,7 +9,14 @@
 User.create(name: "Quinn")
 
 Song.create(name: "Lady Madonna", user_id: 1)
-Song.create(name: "Paperback Writer", user_id: 1)
+Song.create(name: "Paperback Writer", lyric: 'Paperback writer, paperback writer.
+Dear Sir or Madam, will you read my book?
+It took me years to write, will you take a look?
+It\'s based on a novel by a man named Lear,
+And I need a job,
+So I want to be a paperback writer,
+Paperback writer.', music:'GGGGCG', user_id: 1)
+
 Song.create(name: "When I'm Sixty-Four", user_id: 1)
 Song.create(name: "Lovely Rita", user_id: 1)
 Song.create(name: "Happiness Is A Warm Gun", user_id: 1)
